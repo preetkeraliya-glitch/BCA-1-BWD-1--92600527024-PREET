@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donation Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        form {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffd6cc;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(215, 110, 72);">
+
+<form>
+    <h2>🩸 Blood Donation Form</h2>
+
+    <label>Full Name:</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Age:</label>
+    <input type="number" placeholder="Enter your age" required>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <br><br>
+
+    <label>Blood Group:</label>
+    <select required>
+        <option>Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+    </select>
+
+    <label>Mobile Number:</label>
+    <input type="tel" placeholder="Enter mobile number" required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter email">
+
+    <label>Address:</label>
+    <textarea placeholder="Enter your address"></textarea>
+
+    <label>Donation Date:</label>
+    <input type="date" required>
+
+    <input type="submit" value="Donate">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
