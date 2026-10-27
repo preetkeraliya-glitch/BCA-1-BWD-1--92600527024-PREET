@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Odd and Prime</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number:"));
+
+        if (n % 2 == 0) {
+            document.write(n + " is Even<br>");
+        } else {
+            document.write(n + " is Odd<br>");
+        }
+
+        let prime = true;
+
+        if (n <= 1) {
+            prime = false;
+        } else {
+            let i = 2;
+
+            while (i < n) {
+                if (n % i == 0) {
+                    prime = false;
+                    break;
+                }
+                i++;
+            }
+        }
+
+        if (prime) {
+            document.write(n + " is Prime");
+        } else {
+            document.write(n + " is Not Prime");
+        }
+    </script>
+</body>
+</html>
